@@ -1,4 +1,4 @@
-from node import *
+from Node import *
 
 '''
 reverse_list1: reverse the linked list using recursion
