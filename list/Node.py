@@ -11,9 +11,22 @@ print_list: given the head, print out the whole list
 
 '''
 class SinglyNode:
-    def __init__(self, value=None, next=None):
+    def __init__(self, value=None, next=None, head=None):
         self.value = value
         self.next  = next
+
+    def append(self, value):
+        node = SinglyNode(value)
+        head = self
+        while head.next != None:
+            head = head.next
+        head.next = node
+
+    #### writing a delete function?
+    def delete(self, value):
+        return
+
+
 
     def __str__(self):
         return str(self.value)
@@ -23,6 +36,17 @@ class DoublyNode:
         self.value = value
         self.next = next
         self.prev = prev
+
+    ## problem with this function
+    ##  tail pointer will be lost
+    def append(self, value):
+        node = DoublyNode(value)
+        head = self
+        while head.next != None:
+            head = head.next
+        head.next = node
+        node.prev = head
+
     def __str__(self):
         return str(self.value)
 
@@ -58,7 +82,31 @@ def print_list(head):
         node = node.next
     print
 
-def test_doubly():
+
+
+#########################
+####### Testing #########
+#########################
+
+#test_append(value):
+if False:
+    array = [1, 2, 3, 4, 5]
+    head = create_singly_list(array)
+    print_list(head)
+    head.append(6)
+    print_list(head)
+
+## test append doubly
+if False:
+    array = [1,2,3,4,5]
+    head,tail = create_doubly_list(array)
+    print_list(head)
+    head.append(6)
+    print_list(head)
+
+
+#test_doubly():
+if False:
     array = [1, 2 ,3 ,4 ,5]
     (head, tail) = create_doubly_list(array)
     print_list(head)
@@ -69,3 +117,5 @@ def test_doubly():
             print 'End'
         node = node.prev
     print 
+
+
