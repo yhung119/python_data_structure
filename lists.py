@@ -23,7 +23,7 @@ def print_list(node):
         if node.next is None:
         	print None
         node = node.next
-        
+        #paul is here. 
     print
 
 def reverse_list1(node):
@@ -44,7 +44,9 @@ def reverse_list2(node):
 		prev = cur
 		cur = nex
 	return prev
-## o hi yo~
+
+## daniel is here
+
 array = [1, 2, 3, 4 ,5]
 node = create_list(array)
 print_list(node)
