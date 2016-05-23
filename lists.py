@@ -44,8 +44,7 @@ def reverse_list2(node):
 		prev = cur
 		cur = nex
 	return prev
-
-		
+## o hi yo~
 array = [1, 2, 3, 4 ,5]
 node = create_list(array)
 print_list(node)
