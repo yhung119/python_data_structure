@@ -23,5 +23,4 @@ def print_list(node):
         if node.next is None:
         	print None
         node = node.next
-        #paul is here. 
     print
