@@ -2,13 +2,13 @@
 Object Oriented Programming (OOP) is a programming paradigm where the complete software operates as a bunch of objects talking to each other. An object is a collection of data and methods that operate on its data.
 ##Why OOP?
 The main advantage of OOP is better manageable code that covers following.
-1) The overall understanding of the software is increased as the distance between the language spoken by developers and that spoken by users.
-2) Object orientation eases maintenance by the use of encapsulation.   One can easily change the underlying representation by keeping the methods same.
+#####1) The overall understanding of the software is increased as the distance between the language spoken by developers and that spoken by users.
+#####2) Object orientation eases maintenance by the use of encapsulation.   One can easily change the underlying representation by keeping the methods same.
 OOP paradigm is mainly useful for relatively big software. See this for a complete example that shows advantages of OOP over procedural programing.
 ##What are main features of OOP?
-Encapsulation
-Polymorphism
-Inheritance
+#####Encapsulation
+#####Polymorphism
+#####Inheritance
 ##What is encapsulation?
 Encapsulation is referred to one of the following two notions.
 1) Data hiding: A language feature to restrict access to members of an object. For example, private and protected members in C++.
